@@ -42,9 +42,9 @@
 						<div class="sidebar-navbar-body">
 							<div class="sidebar-navbar-body-container">
 								<a href="/" aria-current="page" class="sidebar-navbar-link link-home w-nav-link w--current">Home<br /></a><a href="/dashboards/analytics" class="sidebar-navbar-link w-nav-link">Dashboard<br /></a>
-								<a href="/user-profile" class="sidebar-navbar-link link-profile w-nav-link">User Profile</a><a href="/account-settings/general" class="sidebar-navbar-link link-setting w-nav-link">Account Settings</a>
-								<a href="/payments/payment-details" class="sidebar-navbar-link link-payment w-nav-link">Payments</a><a href="/inbox" class="sidebar-navbar-link link-inbox w-nav-link">Inbox</a>
-								<a href="/contacts" class="sidebar-navbar-link link-contacts w-nav-link">Contacts</a><a href="/projects" class="sidebar-navbar-link link-projects w-nav-link">Projects</a>
+								<a href="/account/userprofile" class="sidebar-navbar-link link-profile w-nav-link">User Profile</a><a href="/account/settings" class="sidebar-navbar-link link-setting w-nav-link">Account Settings</a>
+								<a href="/payments/details" class="sidebar-navbar-link link-payment w-nav-link">Payments</a><a href="/home/inbox" class="sidebar-navbar-link link-inbox w-nav-link">Inbox</a>
+								<a href="/home/contacts" class="sidebar-navbar-link link-contacts w-nav-link">Contacts</a><a href="/projects" class="sidebar-navbar-link link-projects w-nav-link">Projects</a>
 								<a href="/onboarding/step-1" class="sidebar-navbar-link link-onboarding w-nav-link">Onboarding<br /></a>
 								<div data-delay="0" class="sidebar-navbar-dropdown w-dropdown">
 									<div class="sidebar-navbar-link link-utils w-dropdown-toggle">
@@ -135,7 +135,7 @@
 										<div class="notification-item-date">1d ago</div>
 									</a>
 								</div>
-								<div class="notification-content-footer"><a href="/inbox" class="custom-link">View all</a></div>
+								<div class="notification-content-footer"><a href="/home/inbox" class="custom-link">View all</a></div>
 							</nav>
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="notification-content-footer"><a href="/inbox" class="custom-link">View all</a></div>
+											<div class="notification-content-footer"><a href="/home/inbox" class="custom-link">View all</a></div>
 										</div>
 										<div data-w-tab="Tab 2" class="w-tab-pane">
 											<div class="notification-content-heading"><div>Messages (6)</div></div>
@@ -238,7 +238,7 @@
 													<div class="notification-item-date">1d ago</div>
 												</a>
 											</div>
-											<div class="notification-content-footer"><a href="/inbox" class="custom-link">View all</a></div>
+											<div class="notification-content-footer"><a href="/home/inbox" class="custom-link">View all</a></div>
 										</div>
 										<div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
 											<div class="notification-content-heading"><div>News (2)</div></div>
@@ -255,7 +255,7 @@
 													<div class="notification-item-body"><div class="notification-item-title">PayPal is available as payment method.</div></div>
 												</a>
 											</div>
-											<div class="notification-content-footer"><a href="/inbox" class="custom-link">View all</a></div>
+											<div class="notification-content-footer"><a href="/home/inbox" class="custom-link">View all</a></div>
 										</div>
 									</div>
 								</div>
@@ -266,14 +266,14 @@
 						<div data-delay="0" class="menu-dropdown w-dropdown">
 							<div class="menu-dropdown-toggle w-dropdown-toggle"><div class="navbar-dropdown-avatar"></div></div>
 							<nav class="menu-dropdown-list w-dropdown-list">
-								<a href="/user-profile" class="menu-dropdown-link w-inline-block">
+								<a href="/account/userprofile" class="menu-dropdown-link w-inline-block">
 									<div class="munu-dropdown-link-container">
 										<img src="images/5e8a0ba64fbaead7c8227773_icons8-male-user-100-20-3-.png" width="20" alt="" class="menu-dropdown-link-icon" />
 										<div>Profile</div>
 										<div class="hint grey-text">Public profile</div>
 									</div>
 								</a>
-								<a href="/account-settings/general" class="menu-dropdown-link w-inline-block">
+								<a href="/account/settings" class="menu-dropdown-link w-inline-block">
 									<div class="munu-dropdown-link-container">
 										<img src="images/5e8a0bc6f99d7c01a2738435_icons8-settings-100-20-2-.png" width="20" alt="" class="menu-dropdown-link-icon" />
 										<div>Settings</div>
@@ -313,8 +313,8 @@
 		</div>
 		@RenderBody();
 	</div>
-	<script src="js/jquery.js" type="text/javascript"></script>
-	<script src="js/webflow-script.js" type="text/javascript"></script>
+	<script src="/js/jquery.js" type="text/javascript"></script>
+	<script src="/js/webflow-script.js" type="text/javascript"></script>
 	<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>

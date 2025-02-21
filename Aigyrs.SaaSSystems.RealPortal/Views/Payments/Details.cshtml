@@ -1,0 +1,113 @@
+﻿
+		<div class="app-main-layout-container">
+			<div class="app-main-layout-mask"></div>
+			<div class="app-main-layout">
+				<div class="app-main-layout-header">
+					<div class="app-main-layout-wrapper header">
+						<div class="page-heading with-button"><h2>Payments</h2></div>
+						<div class="page-tabs-menu">
+							<a href="/payments/details" aria-current="page" class="page-tab-link payment-details w--current">Payment details</a>
+							<a href="/payments/payments-variant-2-manage-subscription" class="page-tab-link subscription">Subscription</a>
+							<a href="/payments/payments-variant-3-price-plans" class="page-tab-link price-plans">Price plans</a><a href="/payments/payments-variant-4-receipt" class="page-tab-link receipt">Receipt</a>
+						</div>
+					</div>
+				</div>
+				<div class="app-main-layout-wrapper">
+					<div class="app-main-layout-content">
+						<div class="section">
+							<div class="row w-row">
+								<div class="col w-col w-col-6">
+									<div class="card">
+										<h4>Add payment method</h4>
+										<div data-duration-in="300" data-duration-out="100" class="payment-method-tabs w-tabs">
+											<div class="payment-method-tab-menu w-tab-menu">
+												<a data-w-tab="Tab 1" class="payment-method-tab w-inline-block w-tab-link w--current">
+													<div>
+														<div><strong>Credit card</strong></div>
+														<div class="hint grey-text">MasterCard or Visa</div>
+													</div>
+													<img src="../images/5d599abb8602dbdaff976d6e_icons8-bank-cards-100-20-1-.png" width="30" alt="" />
+												</a>
+												<a data-w-tab="Tab 2" class="payment-method-tab w-inline-block w-tab-link">
+													<div>
+														<div><strong>Paypal</strong></div>
+														<div class="hint grey-text">Online payment</div>
+													</div>
+													<img src="../images/5d599aca8602db8108976eb5_icons8-paypal-100-20-4-.png" width="30" alt="" />
+												</a>
+											</div>
+											<div class="payment-method-content w-tab-content">
+												<div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+													<div class="w-form">
+														<form id="email-form" name="email-form" data-name="Email Form">
+															<div class="form-group">
+																<label for="name" class="label">Card number</label>
+																<input type="tel" class="input w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="4444 4444 4444 4444" id="name-4" />
+																<div class="form-group">
+																	<div class="row padding w-row">
+																		<div class="col padding w-col w-col-6 w-col-small-6 w-col-tiny-6">
+																			<label for="name" class="label">Expiration date</label>
+																			<input type="text" class="input w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="02 / 2019" id="name-4" />
+																		</div>
+																		<div class="col padding w-col w-col-6 w-col-small-6 w-col-tiny-6">
+																			<label for="name" class="label">CVC/CVV</label>
+																			<input type="text" class="input w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="444" id="name-4" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<input type="submit" value="Add payment details" data-wait="Please wait..." class="button button-primary w-button" />
+														</form>
+														<div class="success-message w-form-done"><div>Thank you! Your submission has been received!</div></div>
+														<div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>
+													</div>
+												</div>
+												<div data-w-tab="Tab 2" class="w-tab-pane">
+													<p>Proceed to PayPal.</p>
+													<a href="#" class="button button-primary w-button">Add payment details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col w-col w-col-6">
+									<div class="card">
+										<div class="card-heading small"><h4>Payment method</h4></div>
+										<div class="current-method-container">
+											<img src="../images/5d8100449593d0c28996c3e4_icons8-visa-100.png" width="40" alt="" class="current-method-icon" />
+											<div class="current-method-details">
+												<div class="hint text-heading-grey">**** **** **** **** 4444</div>
+												<div class="hint">Expires 02/19</div>
+											</div>
+											<a href="#" class="edit-current-method modal-action w-inline-block"></a>
+											<div class="modal">
+												<div class="modal-mask"></div>
+												<div class="modal-container">
+													<a href="#" class="modal-close w-inline-block"></a>
+													<div class="modal-title">
+														<h4 class="text-center">Remove payment method</h4>
+														<p class="text-center">Are you sure you want to Remove payment method?</p>
+													</div>
+													<div>
+														<a data-w-id="da32af5d-cebf-942c-643a-c06377bc2baf" href="#" class="button-block button button-primary w-button">Cancel</a>
+														<a href="#" class="button-block button button-outline w-button">Remove card</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<div class="w-row">
+							<div class="w-col w-col-6"><div class="hint">© Copyright Artboard. All rights reserved</div></div>
+							<div class="footer-right w-col w-col-6">
+								<div class="hint"><a href="https://webflow.com/" class="footer-link">Powered by Webflow</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
